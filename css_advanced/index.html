@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schooled - Referral/Entry FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">School<span>ed</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Referral & Entry FAQ</h1>
+            <p>Find answers to common questions about our referral program and entry requirements.</p>
+        </div>
+    </section>
+    
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How does the referral program work?</div>
+                    <div class="faq-answer">
+                        <p>Our referral program allows current students to refer friends and family. When someone you refer enrolls in one of our programs, you receive a discount on your tuition or a cash reward, depending on the program.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are the entry requirements?</div>
+                    <div class="faq-answer">
+                        <p>Entry requirements vary by program but generally include a high school diploma or equivalent, completion of an application form, and sometimes an interview or assessment test. Specific requirements are listed on each program's page.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is financial aid available?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer various financial aid options including scholarships, grants, and payment plans. Our financial aid office can help you explore options that fit your situation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I transfer credits from another institution?</div>
+                    <div class="faq-answer">
+                        <p>We accept transfer credits from accredited institutions. To have your credits evaluated, you'll need to submit official transcripts from your previous school(s). Our admissions team will review them and determine which credits are transferable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does the application process take?</div>
+                    <div class="faq-answer">
+                        <p>The application process typically takes 2-4 weeks from submission to decision. This timeline can vary based on the program and time of year. We recommend applying well before your intended start date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="referral-section">
+        <div class="container">
+            <div class="referral-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of students who have transformed their careers through our programs. Refer a friend or begin your application today!</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Schooled</div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Careers</a>
+                </div>
+                <p class="copyright">&copy; 2023 Schooled. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
