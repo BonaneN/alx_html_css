@@ -1,0 +1,66 @@
+/* Flexbox layout for page structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Content width allocation */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Logo styling (predefined class) */
+.logo {
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+/* Optional styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Article and Aside area */
+article, aside {
+    padding: 20px;
+}
+
+/* Mobile styles (optional improvement) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
