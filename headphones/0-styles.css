@@ -1,0 +1,26 @@
+/* 0-styles.css - header & hero base */
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,Arial;color:#222;background:#fff}
+:root{--max-width:1000px;--accent:#FF6565;--muted:#6b7280}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;gap:8px;align-items:center;text-decoration:none;color:inherit}
+.primary-nav .nav-list{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.primary-nav a{text-decoration:none;color:var(--muted);padding:8px;border-radius:8px;font-weight:600}
+.primary-nav a:hover{color:var(--accent)}
+.btn-cta{border:none;background:transparent;color:var(--accent);font-weight:700;padding:8px 12px;cursor:pointer}
+.hero{padding:48px 0}
+.hero-inner{display:flex;gap:36px;align-items:center;justify-content:space-between}
+.hero h1{margin:0 0 12px 0;font-size:40px;line-height:1.05}
+.lead{color:var(--muted);margin:0 0 18px 0}
+.btn{padding:12px 18px;border-radius:10px;text-decoration:none;display:inline-block}
+.btn-primary{background:#111;color:#fff}
+.btn-ghost{background:transparent;border:1px solid #e6e6e6}
+.mockup{width:220px;height:160px;position:relative}
+.headband{width:160px;height:26px;border-radius:20px;background:linear-gradient(#222,#111);position:absolute;left:30px;top:10px;transform:rotate(-10deg)}
+.ear{width:76px;height:90px;border-radius:20px;background:linear-gradient(#fff,#f2f2f2);position:absolute;top:46px}
+.ear.left{left:0} .ear.right{right:0}
+@media(max-width:480px){
+  .primary-nav{display:none}
+  .hero-inner{flex-direction:column-reverse;text-align:center}
+}

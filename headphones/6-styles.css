@@ -1,0 +1,17 @@
+/* 6-styles.css - CSS pentagons for background shapes (no images) */
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,Arial;color:#222;background:#fff}
+:root{--max-width:1000px;--accent:#FF6565}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid #eee}
+.hero{padding:40px 0}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.results-stats{display:flex;gap:18px}
+.stat{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.pentagon-scene{position:relative;width:320px;height:220px;margin:0 auto}
+.pent{position:absolute;width:80px;height:80px;clip-path:polygon(50% 0%,95% 35%,78% 92%,22% 92%,5% 35%);border-radius:8px;background:linear-gradient(135deg,#fff7f7,#fff)}
+.pent-1{left:0;top:10px;transform:rotate(-10deg) scale(1.1);background:linear-gradient(#ffd6d6,#fff)}
+.pent-2{left:70px;top:30px;transform:rotate(6deg) scale(.9);background:linear-gradient(#ffecec,#fff)}
+.pent-3{left:150px;top:0px;transform:rotate(-5deg) scale(1.2);background:linear-gradient(#ffdfe0,#fff)}
+.pent-4{left:210px;top:50px;transform:rotate(12deg) scale(.95);background:linear-gradient(#fff1f1,#fff)}
+.pent-5{left:110px;top:120px;transform:rotate(0deg) scale(.8);background:linear-gradient(#fff7f7,#fff)}
+@media(max-width:480px){.results-grid{grid-template-columns:1fr}}

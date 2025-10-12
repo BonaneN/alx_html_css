@@ -1,0 +1,15 @@
+/* 4-styles.css - final layout + footer */
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,Arial;color:#222;background:#fff}
+:root{--max-width:1000px;--accent:#FF6565;--muted:#6b7280}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.primary-nav .nav-list{display:flex;gap:18px;list-style:none;margin:0}
+.hero{padding:40px 0;text-align:center}
+.cards-row{display:flex;gap:20px}
+.card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);flex:1}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+.site-footer{border-top:1px solid #eee;padding:20px 0;background:#fafafa}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:480px){.primary-nav{display:none}.cards-row{flex-direction:column}.contact-grid{grid-template-columns:1fr}.results-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}}

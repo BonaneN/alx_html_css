@@ -1,0 +1,19 @@
+/* 3-styles.css - adds contact form styling */
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,Arial;color:#222;background:#fff}
+:root{--max-width:1000px;--accent:#FF6565;--muted:#6b7280}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.hero{padding:40px 0}
+.cards-row{display:flex;gap:20px}
+.card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:18px}
+.contact-form{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.form-row{margin-bottom:12px;display:flex;flex-direction:column}
+.form-row label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.form-row input,.form-row textarea{padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+.btn{padding:12px 18px;border-radius:10px}
+.btn-primary{background:#111;color:#fff}
+.btn-ghost{background:transparent;border:1px solid #e6e6e6}
+@media(max-width:480px){.primary-nav{display:none}.contact-grid{grid-template-columns:1fr}.results-grid{grid-template-columns:1fr}}

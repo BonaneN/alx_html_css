@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Headphones — Task 8 Hamburger</title>
+  <link rel="stylesheet" href="8-styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Headphones Home"><span class="brand-logo">🎧</span><span class="brand-name">Headphones</span></a>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#results">Our results</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-cta" id="cta-top">Get started</button>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="#what-we-do">What we do</a></li>
+        <li><a href="#results">Our results</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="btn-cta small">Get started</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Sound that moves you</h1>
+          <p class="lead">Premium headphone design crafted for comfort and clarity.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Buy now</a>
+            <a class="btn btn-ghost" href="#results">See results</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mockup"><div class="headband"></div><div class="ear left"></div><div class="ear right"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="what-we-do" aria-labelledby="what-title">
+      <div class="container">
+        <h2 id="what-title">What we do</h2>
+        <p class="section-sub">We craft audio experiences with a focus on comfort, durability, and clarity.</p>
+
+        <div class="cards-row" role="list">
+          <article class="card" role="listitem" tabindex="0"><div class="icon" aria-hidden="true">🎚️</div><h3>Custom tuning</h3><p>Fine-tuned drivers that match listening preferences.</p></article>
+
+          <article class="card" role="listitem" tabindex="0"><div class="icon" aria-hidden="true">🛠️</div><h3>Built to last</h3><p>High-quality materials and replaceable parts.</p></article>
+
+          <article class="card" role="listitem" tabindex="0"><div class="icon" aria-hidden="true">💡</div><h3>Comfort-first</h3><p>Ergonomic fit for extended listening sessions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="results" aria-labelledby="results-title">
+      <div class="container">
+        <h2 id="results-title">Our results</h2>
+        <p class="section-sub">Measured performance and real-user impact.</p>
+
+        <div class="results-grid">
+          <div class="results-stats">
+            <div class="stat"><div class="stat-number">3M+</div><div class="stat-label">Learners trained</div></div>
+            <div class="stat"><div class="stat-number">98%</div><div class="stat-label">Satisfaction</div></div>
+            <div class="stat"><div class="stat-number">20</div><div class="stat-label">Awards</div></div>
+          </div>
+
+          <div class="results-visual">
+            <div class="pentagon-scene" role="img" aria-label="Decorative pentagon cluster">
+              <div class="pent pent-1" title="pentagon 1"></div>
+              <div class="pent pent-2" title="pentagon 2"></div>
+              <div class="pent pent-3" title="pentagon 3"></div>
+              <div class="pent pent-4" title="pentagon 4"></div>
+              <div class="pent pent-5" title="pentagon 5"></div>
+            </div>
+
+            <div class="result-cta">
+              <h3>Proven, measurable outcomes</h3>
+              <p>We deliver products that perform in lab tests and delight in real life.</p>
+              <a class="btn btn-primary" href="#contact">Talk to sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact us</h2>
+
+        <div class="contact-grid">
+          <form class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row"><label for="name">Name</label><input id="name" name="name" type="text" required placeholder="Your name" /></div>
+
+            <div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com" /></div>
+
+            <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="5" required placeholder="Tell us about your project"></textarea></div>
+
+            <div class="form-row form-actions"><button class="btn btn-primary" type="submit">Send message</button><button class="btn btn-ghost" type="reset">Clear</button></div>
+          </form>
+
+          <aside class="contact-info" aria-hidden="false">
+            <h3>Office</h3>
+            <p>123 Audio Street<br/>Kigali, Rwanda</p>
+            <p><strong>Email:</strong> hello@headphones.example</p>
+            <p><strong>Phone:</strong> +250 7XX XXX XXX</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Headphones — Designed by Nicolas Philippot</p>
+      <nav aria-label="Footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="8-script.js"></script>
+</body>
+</html>
